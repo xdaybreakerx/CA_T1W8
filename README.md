@@ -14,6 +14,20 @@
 ![image](/img/python_file.png)
 
 # Thursday class: 
+- discussed error/exception handling
+    - respond to errors thrown in program
+    - recovering from errors
+    - errors can be thrown either by the program, or developer
+- discussed [specific python errors](https://www.tutorialsteacher.com/python/error-types-in-python)
+- testing
+    - testing the functionalities 
+    - make sure functionality doesn't break when you change code
+- Test Driven Development (TDD)
+    - create the test first
+    - those test will fail
+    - start implementing the functions 
+    - slowly tests will start passing
+- Discussed [pytest](https://docs.pytest.org/en/7.4.x/getting-started.html)
 
 # Saturday class:
 
