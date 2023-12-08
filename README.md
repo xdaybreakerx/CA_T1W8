@@ -30,5 +30,19 @@
 - Discussed [pytest](https://docs.pytest.org/en/7.4.x/getting-started.html)
 
 # Saturday class:
+- revision
+    - string interpolation
+    - list
+    - functions
+    - conditionals
+    - loops
+    - file handling
+    - error handling 
+    - venv
+    - bash scripting
+    - external package
+    - testing 
+- built a simple 'to-do' app in py3 from start to finish
+- discussed T1A3 - Terminal Application project brief
 
 # Challenges
