@@ -34,6 +34,19 @@ def remove_todo(file_name):
 
 def complete_todo(file_name):
     print("\nMark todo as complete:\n")
+    todo_lists = []
+    todo_name = input("Enter the to-do name you have completed: ")
+    with open(file_name, "r") as f:
+        reader = csv.reader(f)
+        for row in reader:
+            if (row[0] != todo_name):
+                todo_lists.append(row)
+            else:
+                todo_lists.append([row[0], "True"])
+    with open(file_name, "w") as f:
+        writer = csv.writer(f)
+        writer.writerows(todo_lists)
+                
 
 def view_todo(file_name):
     print("\nView todo list:\n")
