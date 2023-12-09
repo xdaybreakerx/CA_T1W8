@@ -27,3 +27,4 @@ def view_todo(file_name):
                 print(f"* {row[0]} is completed\n")
             else:
                 print(f"* {row[0]} is not complete\n")
+                
