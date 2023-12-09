@@ -1,7 +1,7 @@
 import csv
 
 def add_todo(file_name):
-    print("Add todo: ")
+    print("\nAdd todo:\n")
     # ask the title of the to-do item
     todo_name = input("Enter title of to-do: ")
     # insert that value into the file - list.csv
@@ -12,10 +12,18 @@ def add_todo(file_name):
         writer.writerow([todo_name, "False"])
 
 def remove_todo(file_name):
-    print("Remove todo: ")
+    print("\nRemove todo:\n")
 
 def complete_todo(file_name):
-    print("Mark todo as complete: ")
+    print("\nMark todo as complete:\n")
 
 def view_todo(file_name):
-    print("View todo list: ")
+    print("\nView todo list:\n")
+    with open(file_name, "r") as f:
+        reader = csv.reader(f)
+        reader.__next__()
+        for row in reader:
+            if (row[1] == "True"):
+                print(f"* {row[0]} is completed\n")
+            else:
+                print(f"* {row[0]} is not complete\n")
